@@ -13,6 +13,7 @@ jobs:
       name: testpypi
       url: https://test.pypi.org/p/slacktokengetter
     permissions:
+      contents: read
       id-token: write
 
     steps:
