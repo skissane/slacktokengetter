@@ -66,6 +66,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Enable automerge
-        run: gh pr merge --auto --merge release-version-${{ steps.get_version.outputs.version }}
+        run: gh pr merge --auto --squash release-version-${{ steps.get_version.outputs.version }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
