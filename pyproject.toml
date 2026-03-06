@@ -6,7 +6,8 @@ readme = "README.md"
 requires-python = ">=3.8,<3.12"
 dependencies = [
     "slacktokens",
-    "pycookiecheat",
+    "cryptography==43.*",
+    "keyring==25.*",
 ]
 
 [project.scripts]
@@ -17,7 +18,16 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/slacktokengetter"]
+packages = ["src/slacktokengetter", "vendor/pycookiecheat/src/pycookiecheat"]
 
-[tool.uv.sources]
-pycookiecheat = { git = "https://github.com/n8henrie/pycookiecheat", rev = "fe0d6896eda7a5687460843102625fe2e3b6d485" }
+[tool.hatch.build.targets.wheel.force-include]
+"vendor/pycookiecheat-LICENSE" = "pycookiecheat-LICENSE"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/",
+    "vendor/pycookiecheat/src/",
+    "vendor/pycookiecheat-LICENSE",
+    "pyproject.toml",
+    "README.md",
+]

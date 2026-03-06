@@ -1,0 +1,3 @@
+[submodule "vendor/pycookiecheat"]
+	path = vendor/pycookiecheat
+	url = https://github.com/n8henrie/pycookiecheat.git

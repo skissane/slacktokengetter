@@ -371,11 +371,15 @@ wheels = [
 [[package]]
 name = "pycookiecheat"
 version = "0.8.0"
-source = { git = "https://github.com/n8henrie/pycookiecheat?rev=fe0d6896eda7a5687460843102625fe2e3b6d485#fe0d6896eda7a5687460843102625fe2e3b6d485" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cryptography" },
     { name = "keyring", version = "25.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
     { name = "keyring", version = "25.7.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d0/12/0518335164660fcd6aaeee74b7db2f255cf7d1941721c915473e6322cc1e/pycookiecheat-0.8.0.tar.gz", hash = "sha256:77bddb394a009e42483ed3808381f46e5c27fe2973dbb7dddec57a0573faa238", size = 31509, upload-time = "2024-11-03T16:52:33.12Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b5/74/a2757821296327ffda8f2bf8e5ec5aaa0e90c87caf948044f179b6228dab/pycookiecheat-0.8.0-py3-none-any.whl", hash = "sha256:e8b76ee1e15236b184973b1f5814647d81805712949dd8adeba46f61ffe7f12c", size = 18643, upload-time = "2024-11-03T16:52:31.747Z" },
 ]
 
 [[package]]
@@ -450,13 +454,16 @@ name = "slacktokengetter"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "pycookiecheat" },
+    { name = "cryptography" },
+    { name = "keyring", version = "25.5.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.9'" },
+    { name = "keyring", version = "25.7.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.9'" },
     { name = "slacktokens" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "pycookiecheat", git = "https://github.com/n8henrie/pycookiecheat?rev=fe0d6896eda7a5687460843102625fe2e3b6d485" },
+    { name = "cryptography", specifier = "==43.*" },
+    { name = "keyring", specifier = "==25.*" },
     { name = "slacktokens" },
 ]
 
