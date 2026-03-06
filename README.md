@@ -12,6 +12,8 @@ Prints Slack tokens and cookies as JSON on stdout. Example output (obviously the
 {"tokens": {"https://WORKSPACE.slack.com/": {"token": "xoxc-1234567890123-4567890123456-78901234567890-0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef", "name": "My Workspace"}}, "cookie": {"name": "d", "value": "xoxd-nID%2Ba1BC%2Babc1d2eFGhiJKl34MN5opQRsTU6VWxyZ7abcD8E9F0gH1ijk2LM3nOpqrs4t5UVWxyzab6cdE7FGh8ijKLm9OpqR%2BabCD123Efg45Hijk%2Bl6MNOpq7Rs89tUvWx0YZaBcd1EF%2BghI2J3KL6mNOpqRstuvw78XYZa9BCD0ef1GhIjk2lmN3OPq34r%2FsTuVWxyzABCd5efGhI6j7klmN8op%3D%3D"}}
 ```
 
+If it fails, it will print JSON with `error` and `traceback` fields instead.
+
 ## Acknowledgements
 
 This project vendors [pycookiecheat](https://github.com/n8henrie/pycookiecheat) (commit [`fe0d6896`](https://github.com/n8henrie/pycookiecheat/commit/fe0d6896eda7a5687460843102625fe2e3b6d485)) by Nathan Henrie, licensed under the MIT License. A copy of that license is included in this repository as [`vendor/pycookiecheat-LICENSE`](vendor/pycookiecheat-LICENSE) and in the distributed packages as `pycookiecheat-LICENSE`.
