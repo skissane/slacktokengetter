@@ -155,19 +155,6 @@ wheels = [
 ]
 
 [[package]]
-name = "pycookiecheat"
-version = "0.8.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "cryptography" },
-    { name = "keyring" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/d0/12/0518335164660fcd6aaeee74b7db2f255cf7d1941721c915473e6322cc1e/pycookiecheat-0.8.0.tar.gz", hash = "sha256:77bddb394a009e42483ed3808381f46e5c27fe2973dbb7dddec57a0573faa238", size = 31509, upload-time = "2024-11-03T16:52:33.12Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/b5/74/a2757821296327ffda8f2bf8e5ec5aaa0e90c87caf948044f179b6228dab/pycookiecheat-0.8.0-py3-none-any.whl", hash = "sha256:e8b76ee1e15236b184973b1f5814647d81805712949dd8adeba46f61ffe7f12c", size = 18643, upload-time = "2024-11-03T16:52:31.747Z" },
-]
-
-[[package]]
 name = "pycparser"
 version = "3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -200,32 +187,19 @@ wheels = [
 
 [[package]]
 name = "slacktokengetter"
-version = "0.1.7"
+version = "0.1.8"
 source = { editable = "." }
 dependencies = [
     { name = "cryptography" },
     { name = "keyring" },
-    { name = "slacktokens" },
+    { name = "leveldb" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "cryptography", specifier = "==43.*" },
     { name = "keyring", specifier = "==25.*" },
-    { name = "slacktokens" },
-]
-
-[[package]]
-name = "slacktokens"
-version = "0.2.6"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "leveldb" },
-    { name = "pycookiecheat" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a2/35/5fb4f87bbc917c994e81986efd4ce26b73a107cd27911a26e7507dfa14a5/slacktokens-0.2.6.tar.gz", hash = "sha256:9f941a3663d3902613a846620fbcf631662caf732016ab34a67bd3435ac630a4", size = 16284, upload-time = "2025-06-20T12:42:23.873Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/3b/a56eabd7ba12d0b42b823bfcc22ad2940c4d4fbca74917e4642593f2e42a/slacktokens-0.2.6-py3-none-any.whl", hash = "sha256:0247b7707833e260bd2c568364fd97bff4a298bde8d8c01da6401b6f95d333eb", size = 16861, upload-time = "2025-06-20T12:42:22.529Z" },
+    { name = "leveldb", specifier = "==0.201" },
 ]
 
 [[package]]
