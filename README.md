@@ -1,6 +1,6 @@
 # slacktokengetter
 
-![PyPI - Version](https://img.shields.io/pypi/v/slacktokengetter)
+[![PyPI - Version](https://img.shields.io/pypi/v/slacktokengetter)](https://pypi.org/p/slacktokengetter/)
 
 Gets Slack tokens — wrapper around [slacktokens](https://github.com/mickey/slacktokens) providing a CLI entrypoint.
 
