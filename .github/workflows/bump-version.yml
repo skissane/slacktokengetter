@@ -23,6 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GH_ACTIONS_TOKEN }}
           ref: master
           fetch-depth: 0
 
