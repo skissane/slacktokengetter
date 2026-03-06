@@ -3,7 +3,7 @@ name = "slacktokengetter"
 version = "0.1.0"
 description = "Gets Slack tokens - wrapper around slacktokens providing a CLI entrypoint"
 readme = "README.md"
-requires-python = ">=3.8,<3.12"
+requires-python = "==3.11.*"
 dependencies = [
     "slacktokens",
     "cryptography==43.*",
