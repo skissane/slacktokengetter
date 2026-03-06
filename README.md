@@ -19,7 +19,7 @@ This project vendors [slacktokens](https://github.com/hraftery/slacktokens) (com
 
 `pycookiecheat` is vendored because the latest released version (0.8.0) has broken support for the Slack app on macOS if you use the non-Mac App Store distribution of Slack; the maintainer has merged [a PR to fix this issue](https://github.com/n8henrie/pycookiecheat/pull/80), but hasn't yet made a new release incorporating that fix. While one could address this by using a `git+ssh://` dependency, PyPI does not allow packages containing such dependencies to be uploaded. So to distribute this via PyPI, we have to vendor `pycookiecheat`. And that in turn forces us to vendor `slacktokens`, since it has the dependency on `pycookiecheat`.
 
-We don't "shadow" the dependencies we vendor, which means you can't install this into the same environment as the unvendored `slacktokens` and `pycookiecheat` passages. However, that is not a problem, since this package is essentially an application distributed via PyPI, it is not intended to be used as a library.
+We don't "shadow" the dependencies we vendor, which means you can't install this into the same environment as the unvendored `slacktokens` and `pycookiecheat` packages. However, that is not a problem, since this package is essentially an application distributed via PyPI, it is not intended to be used as a library.
 
 ## Why only Python 3.11?
 
