@@ -50,7 +50,7 @@ jobs:
       - name: Commit version bump
         run: |
           git add -u
-          git diff --cached --quiet || git commit -m "Bump version to ${{ steps.get_version.outputs.version }}"
+          git commit -m "Bump version to ${{ steps.get_version.outputs.version }}"
 
       - name: Push branch
         run: git push origin release-version-${{ steps.get_version.outputs.version }}
