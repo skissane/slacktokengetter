@@ -1,0 +1,2 @@
+# slacktokengetter
+Gets Slack tokens
