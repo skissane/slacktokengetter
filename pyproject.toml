@@ -1,0 +1,23 @@
+[project]
+name = "slacktokengetter"
+version = "0.1.0"
+description = "Gets Slack tokens - wrapper around slacktokens providing a CLI entrypoint"
+readme = "README.md"
+requires-python = ">=3.7,<3.12"
+dependencies = [
+    "slacktokens",
+    "pycookiecheat",
+]
+
+[project.scripts]
+slacktokengetter = "slacktokengetter:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/slacktokengetter"]
+
+[tool.uv.sources]
+pycookiecheat = { git = "https://github.com/n8henrie/pycookiecheat", rev = "fe0d6896eda7a5687460843102625fe2e3b6d485" }
