@@ -4,6 +4,7 @@ version = "0.1.7"
 description = "Gets Slack tokens - wrapper around slacktokens providing a CLI entrypoint"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
+license = "MIT AND GPL-3.0-only"
 dependencies = [
     "leveldb==0.201",
     "cryptography==43.*",
