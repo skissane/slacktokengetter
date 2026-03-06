@@ -41,3 +41,5 @@ jobs:
             git push origin "${TAG}"
             echo "Created and pushed tag ${TAG}"
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
