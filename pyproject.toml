@@ -4,8 +4,9 @@ version = "0.1.7"
 description = "Gets Slack tokens - wrapper around slacktokens providing a CLI entrypoint"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
+license = "MIT AND GPL-3.0-only"
 dependencies = [
-    "slacktokens",
+    "leveldb==0.201",
     "cryptography==43.*",
     "keyring==25.*",
 ]
@@ -22,12 +23,16 @@ packages = ["src/slacktokengetter", "vendor/pycookiecheat/src/pycookiecheat"]
 
 [tool.hatch.build.targets.wheel.force-include]
 "vendor/pycookiecheat-LICENSE" = "pycookiecheat-LICENSE"
+"vendor/slacktokens/slacktokens.py" = "slacktokens.py"
+"vendor/slacktokens-LICENSE" = "slacktokens-LICENSE"
 
 [tool.hatch.build.targets.sdist]
 include = [
     "src/",
     "vendor/pycookiecheat/src/",
     "vendor/pycookiecheat-LICENSE",
+    "vendor/slacktokens/slacktokens.py",
+    "vendor/slacktokens-LICENSE",
     "pyproject.toml",
     "README.md",
 ]
