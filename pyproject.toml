@@ -19,8 +19,7 @@ classifiers= [
 ]
 
 [project.urls]
-homepage = "https://github.com/skissane/slacktokengetter"
-repository = "https://github.com/skissane/slacktokengetter"
+Repository = "https://github.com/skissane/slacktokengetter"
 
 [project.scripts]
 slacktokengetter = "slacktokengetter:main"
