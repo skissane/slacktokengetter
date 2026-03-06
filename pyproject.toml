@@ -1,6 +1,6 @@
 [project]
 name = "slacktokengetter"
-version = "0.1.2"
+version = "0.1.3"
 description = "Gets Slack tokens - wrapper around slacktokens providing a CLI entrypoint"
 readme = "README.md"
 requires-python = "==3.11.*"
