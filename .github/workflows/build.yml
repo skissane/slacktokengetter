@@ -51,4 +51,3 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
-          GH_TOKEN: ${{ secrets.GH_ACTIONS_TOKEN }}
