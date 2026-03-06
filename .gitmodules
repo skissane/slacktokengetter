@@ -1,3 +1,6 @@
 [submodule "vendor/pycookiecheat"]
 	path = vendor/pycookiecheat
 	url = https://github.com/n8henrie/pycookiecheat.git
+[submodule "vendor/slacktokens"]
+	path = vendor/slacktokens
+	url = https://github.com/hraftery/slacktokens.git
