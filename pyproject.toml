@@ -10,6 +10,17 @@ dependencies = [
     "cryptography==43.*",
     "keyring==25.*",
 ]
+classifiers= [
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+homepage = "https://github.com/skissane/slacktokengetter"
+repository = "https://github.com/skissane/slacktokengetter"
 
 [project.scripts]
 slacktokengetter = "slacktokengetter:main"
