@@ -1,2 +1,14 @@
 # slacktokengetter
-Gets Slack tokens
+Gets Slack tokens — wrapper around [slacktokens](https://github.com/mickey/slacktokens) providing a CLI entrypoint.
+
+## Usage
+
+```
+uvx slacktokengetter
+```
+
+Prints Slack tokens and cookies as JSON on stdout.
+
+## Acknowledgements
+
+This project vendors [pycookiecheat](https://github.com/n8henrie/pycookiecheat) (commit `fe0d6896`) by Nathan Henrie, licensed under the MIT License. A copy of that license is included in this repository as [`vendor/pycookiecheat-LICENSE`](vendor/pycookiecheat-LICENSE) and in the distributed packages as `pycookiecheat-LICENSE`.
